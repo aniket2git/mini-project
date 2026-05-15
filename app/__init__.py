@@ -21,6 +21,15 @@ def create_app():
 
     login_manager.init_app(app)
 
+    from app.models.models import (
+    User,
+    Course,
+    Lecture,
+    Purchase
+    )
+
+
+
     migrate.init_app(app, db)
 
     login_manager.login_view = "auth.login"
@@ -31,6 +40,7 @@ def create_app():
 
         return User.query.get(int(user_id))
 
+    
 
     from app.routes.main import main
 
@@ -39,6 +49,8 @@ def create_app():
     from app.routes.admin import admin
 
     from app.routes.courses import courses
+
+    
 
     app.register_blueprint(main)
 
