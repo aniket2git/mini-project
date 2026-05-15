@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="mt-12">
+
+    <h1 class="text-5xl font-bold">
+        {{ lecture.title }}
+    </h1>
+
+    <div class="mt-10 bg-black rounded-2xl h-[500px] flex items-center justify-center">
+
+    <video
+        controls
+        class="w-full rounded-2xl mt-10"
+    >
+
+        <source
+            src="/uploads/lecture_videos/{{ lecture.video_url }}"
+            type="video/mp4"
+        >
+
+    </video>
+
+    </div>
+
+    <p class="mt-8 text-gray-600">
+        Video URL: {{ lecture.video_url }}
+    </p>
+
+</div>
+
+{% endblock %}

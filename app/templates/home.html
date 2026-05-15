@@ -1,0 +1,189 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="text-center py-24">
+
+    <h1 class="text-6xl font-extrabold text-gray-900 leading-tight">
+
+        Build Real Skills <br>
+
+        <span class="text-blue-600">
+            With Code Unveil
+        </span>
+
+    </h1>
+
+    <p class="mt-8 text-xl text-gray-600 max-w-2xl mx-auto">
+
+        Learn Flask, Backend Development, Databases,
+        Authentication, Payments, and Real Production Skills.
+
+    </p>
+
+    <div class="mt-10 flex justify-center gap-6">
+
+        <a href="/courses"
+           class="bg-blue-600 text-white px-8 py-4 rounded-xl hover:bg-blue-700 transition">
+
+            Explore Courses
+
+        </a>
+
+        <a href="/about"
+           class="border border-gray-400 px-8 py-4 rounded-xl hover:bg-gray-200 transition">
+
+            Learn More
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- Featured Courses -->
+
+<section class="py-16">
+
+    <h2 class="text-4xl font-bold text-center mb-14">
+        Featured Courses
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Card 1 -->
+        <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-2xl transition duration-300">
+
+            <div class="h-40 bg-blue-100 rounded-xl mb-5"></div>
+
+            <h3 class="text-2xl font-bold">
+                Flask Bootcamp
+            </h3>
+
+            <p class="mt-4 text-gray-600">
+                Learn Flask by building real-world projects.
+            </p>
+
+            <button class="mt-6 bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
+                View Course
+            </button>
+
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-2xl transition duration-300">
+
+            <div class="h-40 bg-green-100 rounded-xl mb-5"></div>
+
+            <h3 class="text-2xl font-bold">
+                SQLAlchemy Mastery
+            </h3>
+
+            <p class="mt-4 text-gray-600">
+                Learn database design and ORM relationships.
+            </p>
+
+            <button class="mt-6 bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700">
+                View Course
+            </button>
+
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-2xl transition duration-300">
+
+            <div class="h-40 bg-purple-100 rounded-xl mb-5"></div>
+
+            <h3 class="text-2xl font-bold">
+                Authentication System
+            </h3>
+
+            <p class="mt-4 text-gray-600">
+                Build secure login and registration systems.
+            </p>
+
+            <button class="mt-6 bg-purple-600 text-white px-5 py-2 rounded-lg hover:bg-purple-700">
+                View Course
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Pricing -->
+
+<section class="py-20">
+
+    <h2 class="text-4xl font-bold text-center mb-14">
+        Pricing
+    </h2>
+
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-10">
+
+        <!-- Free Plan -->
+        <div class="bg-white p-10 rounded-2xl shadow-lg">
+
+            <h3 class="text-3xl font-bold">
+                Starter
+            </h3>
+
+            <p class="text-gray-600 mt-4">
+                Perfect for beginners.
+            </p>
+
+            <div class="mt-8 text-5xl font-extrabold">
+                ₹0
+            </div>
+
+            <ul class="mt-8 space-y-4 text-gray-700">
+
+                <li>✔ Free tutorials</li>
+                <li>✔ Community access</li>
+                <li>✔ Beginner roadmap</li>
+
+            </ul>
+
+            <button class="mt-10 w-full bg-gray-900 text-white py-3 rounded-xl hover:bg-black">
+                Start Learning
+            </button>
+
+        </div>
+
+        <!-- Pro Plan -->
+        <div class="bg-blue-600 text-white p-10 rounded-2xl shadow-2xl scale-105">
+
+            <h3 class="text-3xl font-bold">
+                Pro
+            </h3>
+
+            <p class="mt-4 text-blue-100">
+                For serious developers.
+            </p>
+
+            <div class="mt-8 text-5xl font-extrabold">
+                ₹499
+            </div>
+
+            <ul class="mt-8 space-y-4">
+
+                <li>✔ Full premium courses</li>
+                <li>✔ Downloadable resources</li>
+                <li>✔ Project-based learning</li>
+                <li>✔ Future updates</li>
+
+            </ul>
+
+            <button class="mt-10 w-full bg-white text-blue-600 py-3 rounded-xl hover:bg-gray-100">
+                Join Pro
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
